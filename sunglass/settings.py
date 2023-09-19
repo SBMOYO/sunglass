@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-#!ng5i%k$%jm5@fhcn&oa#1=c=wd-=#k0_m%+i406-1fzl0!77
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -78,11 +78,11 @@ WSGI_APPLICATION = 'sunglass.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'postgres',
-        'USER': 'postgres',
-        'PASSWORD': 'sungano19981123',
+        'NAME': 'sunglasses',
+        'USER': 'sungano',
+        'PASSWORD': 'simplepassword',
         'HOST': 'localhost',  # Replace with your PostgreSQL server's address if necessary
-        'PORT': '',          # Leave empty to use the default PostgreSQL port (usually 5432)
+        'PORT': '5432',          # Leave empty to use the default PostgreSQL port (usually 5432)
     }
 }
 

@@ -7,13 +7,19 @@ def index(request):
     return render(request, 'index.html',{'sunglass': sunglass})
 
 def shop(request):
-    return render(request, 'shop.html')
+    apply_position_head = True
+    return render(request, 'shop.html', {'apply_position_head': apply_position_head})
 
 def about(request):
-    return render(request, 'about.html')
+    apply_position_head = True
+    return render(request, 'about.html',{'apply_position_head': apply_position_head})
 
 def glasses(request):
-    return render(request, 'glasses.html')
+    apply_position_head = True
+    sunglass = Sunglass.objects.all()
+    return render(request, 'glasses.html', {'sunglass': sunglass, 'apply_position_head': apply_position_head})
 
 def contact(request):
-    return render(request, 'contact.html')
+    apply_position_head = True
+    return render(request, 'contact.html', {'apply_position_head': apply_position_head})
+
