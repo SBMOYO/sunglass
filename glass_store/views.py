@@ -22,4 +22,3 @@ def glasses(request):
 def contact(request):
     apply_position_head = True
     return render(request, 'contact.html', {'apply_position_head': apply_position_head})
-
